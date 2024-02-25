@@ -1,0 +1,38 @@
+body {
+  align-items: center;
+  padding-top: 50px
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("titleScreenBG.jpg");
+  background-size: 800px;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 600px;
+}
+
+.game img {
+  width: 300px;
+  height: 225px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.game a {
+  margin-bottom: 400px;
+  border-radius: 12px;
+  border: 2px white;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 8px 8px;
+  cursor: pointer;
+}
+
+.game a:hover {
+
+}
