@@ -1,0 +1,95 @@
+body{
+  margin: auto;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  background-color: grey;
+  box-shadow: 12px black;
+  z-index: 3;
+}
+
+.top a {
+  padding-top: 35px;
+  font-size: 24px;
+  align-self: center;
+}
+
+.slot {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 25px;
+  top: 135px;
+  width: 750px;
+  height: 75px;
+  border-radius: 20px;
+  background-color: black;
+  z-index: 0;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-top: 80px;
+  margin: auto;
+  height: 600px;
+  width: 800px;
+  background-color: darkgrey;
+  position: relative;
+}
+
+@keyframes dropDown {
+  from {top:-450px;}
+  to {top:50px;}
+}
+
+@keyframes blinking-circle {
+  0% {opacity: 1;}
+  20% {opacity: .6; color: green;}
+  40% {opacity: 1;}
+  60% {opacity: .4; color: red;}
+  80% {opacity: 1;}
+  100% {opacity: .8;}
+}
+
+.ticket {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  top: 50px;
+  height: 350px;
+  width: 600px;
+  background-color: white;
+  border-radius: 48px;
+  animation: dropDown 4s;
+  box-shadow: 3px 6px rgba(0,0,0,.5);
+}
+.ticket > div {
+  font-size: 64px
+}
+
+/* .circle {
+  margin-left: 715px;
+  margin-bottom: 5px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: limegreen;
+  opacity: 20%;
+  animation: blinking-circle 4s;
+}
+*/
