@@ -1,0 +1,101 @@
+.game {
+    height: 600px;
+    width: 800px;
+    background-color: gray;
+    margin: auto;
+}
+
+.reels {
+    padding-top: 75px;
+    display:flex;
+    justify-content: center;
+
+}
+
+.reelOne, .reelTwo, .reelThree {
+    background-image: linear-gradient( rgb(128, 128, 128, .35), rgb(211, 211, 211, .1), rgb(128, 128, 128, .35));
+    height: 250px;
+    width: 102px;
+    margin: 25px;
+    overflow-y: hidden;
+    text-align: center;
+    background-color: white;
+    font-size: 96px;
+    border: 2px black solid;
+}
+
+.reelOne tr:nth-child(odd), .reelTwo tr:nth-child(odd), .reelThree tr:nth-child(odd) {
+    background-image: linear-gradient(rgb(211, 211, 211,.05), rgb(128, 128, 128, .4), rgb(211, 211, 211,.05));
+}
+ /* maybe add text shadow for each possible character? only special characters?*/
+
+.reelOne tr {
+    animation: roll 7.5s forwards;
+}
+
+.reelTwo tr {
+    animation: roll2 6.5s ease-out forwards;
+}
+
+.reelThree tr {
+    animation: roll3 5s forwards;
+}
+
+@keyframes roll {
+    0% { transform: translate(0, 0em); }
+    75% { transform: translate(0, -56.8em); }
+    100% { transform: translate(0, -56.5em);}
+}
+@keyframes roll2 {
+    0% { transform: translate(0, 0em); }
+    60% { transform: translate(0, -57em); }
+    100% { transform: translate(0, -56.4em);}
+}
+@keyframes roll3 {
+    0% { transform: translate(0, 0em); }
+    80% { transform: translate(0, -56.4em); }
+    100% { transform: translate(0, -56.45em);}
+}
+
+.bottom {
+
+    background-color: lightgray;
+    padding-bottom: 136px;
+    text-align: center;
+    font-family: "helvetica";
+}
+
+.bottom h1 {
+    padding-top: 10px;
+}
+
+
+.redButton {
+    float: right;
+    border: 2px black solid;
+    border-radius: 5%;
+    margin: 20px;
+    padding: 5px 20px;
+    animation: blinkRed .65s infinite alternate;
+}
+
+.redButton h1:active {
+    scale: 95%;
+} /*maybe get rid of this for the active animation screen*/
+
+@keyframes blinkRed {
+    0% {
+        text-shadow: 0 0px 02px red;
+        background-color: rgb(165, 42, 42);
+        opacity: 80%;
+    }
+    50% {
+        text-shadow: 2px 2px 04px rgb(210, 21, 21);
+        opacity: 85%;
+    }
+    100% {
+        text-shadow: 4px 4px 12px brown;
+        background-color: rgb(255, 0, 0);
+        opacity: 95%;
+    }
+}
