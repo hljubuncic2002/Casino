@@ -1,38 +1,134 @@
 body {
-  align-items: center;
-  padding-top: 50px
+    align-items: center;
+    padding-top: 50px
 }
 
 .game {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("titleScreenBG.jpg");
-  background-size: 800px;
-  background-repeat: no-repeat;
-  width: 800px;
-  height: 600px;
+    background-image: url(casino-roulette-background-illustration-ai-generative-free-photo.jpg);
+    background-position: 50% 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    background-size: 800px;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 600px;
 }
 
 .game img {
-  width: 300px;
-  height: 225px;
-  margin: auto;
-  margin-top: 50px;
-  margin-bottom: 5px;
+    scale: .80;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
-.game a {
-  margin-bottom: 400px;
-  border-radius: 12px;
-  border: 2px white;
-  background-color: black;
-  color: white;
-  font-size: 18px;
-  padding: 8px 8px;
-  cursor: pointer;
+@keyframes pulsate {
+    0% {
+        text-shadow: 
+        0 0 6px #fff,
+        0 0 8px #fff,
+        0 0 16px blue,
+        0 0 24x pink,
+        0 0 50px pink;  
+    }
+
+    20% {
+        text-shadow: 
+        0 0 10px #fff,
+        0 0 12px #fff,
+        0 0 14px blue,
+        0 0 28px pink,
+        0 0 58px pink;   
+    }
+
+    45% {
+        text-shadow: 
+        0 0 04px #fff,
+        0 0 08px #fff,
+        0 0 06px blue,
+        0 0 12px pink,
+        0 0 12px pink;   
+    }
+
+    85% {
+        text-shadow: 
+        0 0 24px #fff,
+        0 0 26px #fff,
+        0 0 18px blue,
+        0 0 36px pink,
+        0 0 40px pink;   
+    }
+
+    100% {
+        text-shadow: 
+        0 0 26px #fff,
+        0 0 28px #fff,
+        0 0 22px blue,
+        0 2.5 40px pink,
+        2.5 5 52px pink;   
+    }
 }
 
-.game a:hover {
+.enter {
+    font-family: 'Brush Script MT';
+    text-decoration: none;
+    color: pink;
+    font-size: 36px;
+    padding: 8px 8px;
+    cursor: pointer;
+    animation: pulsate 5s ease-in-out alternate infinite;
+    bottom: 200px;
+}
 
+.enter a:link {
+    text-decoration: none;
+    color: pink;
+}
+
+.enter a:visited {
+    text-decoration: none;
+    color: pink;
+}
+
+.enter a:hover {
+    text-decoration: none;
+    color: pink;
+    cursor: pointer;
+}
+
+.game p {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 120px;
+    color: whitesmoke;
+    border-radius: 12px;
+    background-color: black;
+    opacity: 80%;
+}
+
+.exit {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 12px;
+    padding: 8px 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.exit a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.exit a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.exit a:hover {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
