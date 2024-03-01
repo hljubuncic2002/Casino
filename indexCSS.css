@@ -1,0 +1,61 @@
+.screen {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    width: 900px;
+    margin: auto;
+    background-color: hsl(120, 100%, 98%);
+
+}
+
+header {
+
+    text-align: center;
+    color: black;
+    text-shadow: 1px 1px red;
+    background-size: 125%;
+    background-color: darkgreen;
+    background-image: url(roulette_PNG41.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: 735px -15px;
+    height: 120px;
+}
+
+header h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 48px;
+}
+
+.teamInfo {
+    padding-top: 0px;
+    float: left;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 60%;
+    margin: 2%;
+    columns: 1;
+}
+.teamInfo h2 {
+    padding-left: 40px;
+    font-style: oblique;
+}
+.teamInfo li {
+    line-height: 20px;
+}
+
+.contributions {
+    text-align: center;
+}
+
+.links {
+    column-count: 1;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.links a:link {
+    color: green;
+    text-decoration: none;
+}
