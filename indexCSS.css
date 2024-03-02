@@ -2,7 +2,7 @@
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    height: 900px;
+    height: 750px;
     width: 900px;
     margin: auto;
     background-color: hsl(120, 100%, 98%);
@@ -50,6 +50,8 @@ header h1 {
 }
 
 .links {
+    display: flex;
+    flex-direction: column;
     column-count: 1;
     text-align: center;
     margin-top: 15px;
@@ -58,4 +60,16 @@ header h1 {
 .links a:link {
     color: green;
     text-decoration: none;
+}
+
+.links a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+.links img {
+    margin-top: -10px;
+    transform: scale(.95);
+    position: relative;
+    
 }
