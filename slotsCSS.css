@@ -3,12 +3,48 @@
     width: 800px;
     background-color: gray;
     margin: auto;
+    z-index: -1;
+}
+
+a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: jackpot 11s forwards;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.jackpot img {
+    transform: scale(1);
+    padding-top: 0px;
+    z-index: 2;
+}
+
+.jackpot {
+    position: relative;
+    margin: auto;
+    height: 75px;
+    animation: jackpot 10s forwards;
+    left: 145px;
+    z-index: 2;
+}
+
+@keyframes jackpot {
+    0% { opacity: 0%;}
+    90% {opacity: 0%;}
+    100% { opacity: 100%;}
 }
 
 .reels {
-    padding-top: 75px;
+    padding-top: 0px;
     display:flex;
     justify-content: center;
+    z-index: 1;
 
 }
 
@@ -22,6 +58,7 @@
     background-color: white;
     font-size: 96px;
     border: 2px black solid;
+    z-index: 1;
 }
 
 .reelOne tr:nth-child(odd), .reelTwo tr:nth-child(odd), .reelThree tr:nth-child(odd) {
@@ -80,7 +117,7 @@
 }
 
 .redButton h1:active {
-    scale: 95%;
+    transform: scale(.95);
 } /*maybe get rid of this for the active animation screen*/
 
 @keyframes blinkRed {
