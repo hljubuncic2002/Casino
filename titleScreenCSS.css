@@ -1,6 +1,6 @@
 body {
     align-items: center;
-    padding-top: 50px
+    padding-top: 75px
 }
 
 .game {
@@ -18,7 +18,7 @@ body {
 }
 
 .game img {
-    scale: .80;
+    transform: scale(.8);
     margin: auto;
     margin-top: 0px;
     margin-bottom: 5px;
@@ -30,7 +30,7 @@ body {
         0 0 6px #fff,
         0 0 8px #fff,
         0 0 16px blue,
-        0 0 24x pink,
+        0 0 24px pink,
         0 0 50px pink;  
     }
 
@@ -66,8 +66,8 @@ body {
         0 0 26px #fff,
         0 0 28px #fff,
         0 0 22px blue,
-        0 2.5 40px pink,
-        2.5 5 52px pink;   
+        0 2.5px 40px pink,
+        2.5px 5px 52px pink;   
     }
 }
 
