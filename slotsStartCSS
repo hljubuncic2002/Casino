@@ -70,7 +70,7 @@
 }
 
 .redButton:active {
-    transform: scale(.95);
+    scale: 95%;
 }
 
 @keyframes blinkRed {
