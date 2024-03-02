@@ -1,0 +1,73 @@
+body{
+    background-image: url("assets/roulette_table.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wheel{
+    position: absolute;
+    top: 47%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+   /* animation: rotation 2s linear 5;*/
+}
+
+@keyframes rotation {
+    0%{
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) rotate(359deg);
+    }
+}
+
+.ball{
+    height:20px;
+    width: 20px;
+    position: absolute;
+    top:47%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    /*animation: circularMotion 2s 5 linear;*/
+    transform-origin: 700% 300%;
+
+}
+
+@keyframes circularMotion {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg) translateX(200px) rotate(360deg);
+    }
+}
+
+.you-won {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 24px;
+    color: green;
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.container:hover .you-won {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.spin_button{
+    position:absolute;
+    top : 80%;
+    left: 16%;
+    height:100px;
+    width:100px;
+}
+  

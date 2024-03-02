@@ -1,0 +1,130 @@
+body{
+    background-image: url("assets/roulette_table.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wheel{
+    position:fixed;
+    top: 47%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    animation: rotation 2s linear 5;
+}
+
+@keyframes rotation {
+    0%{
+      transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) rotate(359deg);
+    }
+}
+
+.ball{
+    height:20px;
+    width: 20px;
+    position: absolute;
+    top:47%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    animation: circularMotion 2s 5 linear;
+    transform-origin: 700% 300%;
+
+}
+
+@keyframes circularMotion {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg) translateX(200px) rotate(360deg);
+    }
+}
+
+
+/*.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Change button color on hover 
+  .button:hover {
+    background-color: #0056b3;
+  }*/
+
+  @keyframes fadeIn {
+    0% { opacity: 0; visibility: hidden; }
+    100% { opacity: 1; visibility: visible; }
+  }
+
+  /* Style for the image */
+  div {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; 
+    justify-items: center;
+    
+    
+  }
+ 
+  .animated-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+
+    width: 700px; /* Adjust image width as needed */
+    height: 800px;
+    opacity: 0;
+    visibility: hidden; /* Adjust image height as needed */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 10s; /* Adjust delay duration as needed */
+  }
+
+  .playagain {
+    display: block;
+    margin-left: 35%;
+    margin-right: 50%;
+    align-self: center;
+  
+
+    width: 150px; /* Adjust image width as needed */
+    height: 80px;
+    opacity: 0;
+    visibility: hidden; /* Adjust image height as needed */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 10s;
+  }
+
+  .exit {
+    display: block;
+    margin-left: 65%;
+    margin-right: 50%;
+  
+
+    width: 150px; /* Adjust image width as needed */
+    height: 80px;
+    opacity: 0;
+    visibility: hidden; /* Adjust image height as needed */
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 10s;
+  }
+
+  
+  
