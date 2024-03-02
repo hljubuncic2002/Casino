@@ -5,6 +5,20 @@
     margin: auto;
 }
 
+a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: textAnimation 9s forwards;
+}
+
+@keyframes textAnimation {
+    0% { opacity: 0%;}
+    90% {opacity: 0%;}
+    100% { opacity: 100%;}
+}
+
 .reels {
     padding-top: 75px;
     display:flex;
@@ -30,31 +44,31 @@
  /* maybe add text shadow for each possible character? only special characters?*/
 
 .reelOne tr {
-    animation: roll 7.5s forwards;
+    animation: roll 8s forwards;
 }
 
 .reelTwo tr {
-    animation: roll2 6.5s ease-out forwards;
+    animation: roll2 7.5s ease-out forwards;
 }
 
 .reelThree tr {
-    animation: roll3 5s forwards;
+    animation: roll3 6.5s forwards;
 }
 
 @keyframes roll {
     0% { transform: translate(0, 0em); }
-    75% { transform: translate(0, -56.8em); }
-    100% { transform: translate(0, -56.5em);}
+    60% { transform: translate(0, -29em); }
+    100% { transform: translate(0, -28.65em);}
 }
 @keyframes roll2 {
     0% { transform: translate(0, 0em); }
-    60% { transform: translate(0, -10em); }
-    100% { transform: translate(0, -20em);}
+    60% { transform: translate(0, -27.75em); }
+    100% { transform: translate(0, -27.25em);}
 }
 @keyframes roll3 {
     0% { transform: translate(0, 0em); }
-    80% { transform: translate(0, -56.4em); }
-    100% { transform: translate(0, -56.45em);}
+    60% { transform: translate(0, -26.25em); }
+    100% { transform: translate(0, -25.75em);}
 }
 
 .bottom {
@@ -89,7 +103,7 @@
 }
 
 .redButton:active {
-    scale: 95%;
+    transform: scale(.95);
 }
 
 @keyframes blinkRed {
