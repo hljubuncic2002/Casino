@@ -3,6 +3,7 @@
     width: 800px;
     background-color: gray;
     margin: auto;
+    margin-top: 81px;
 }
 
 .reels {
@@ -69,7 +70,7 @@
 }
 
 .redButton:active {
-    scale: 95%;
+    transform: scale(.95);
 }
 
 @keyframes blinkRed {
